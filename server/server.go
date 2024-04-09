@@ -30,8 +30,9 @@ func Test(c *gin.Context) {
 	var per = TestResponse{
 		Id:          req.Id,
 		Name:        req.Name,
-		Sex:         "男",
+		Sex:         "女",
 		ShortLength: "长",
 	}
 	c.JSON(http.StatusOK, per)
+	fmt.Println("Hello")
 }
